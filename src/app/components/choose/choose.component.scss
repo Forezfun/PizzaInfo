@@ -1,0 +1,74 @@
+.choose{
+font-family: Konga Pro;
+color:white;
+}
+.choose:hover{
+cursor:pointer;
+}
+.main_choose_card {
+  grid-column: 1/-1;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.second_choose_card {
+  padding-bottom: 15px;
+  max-width: 90%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+}
+.Ingredient_img {
+  width: 40px;
+}
+.text{
+  word-break: break-all;
+  width:100%;
+}
+.cards {
+  width: 15vw;
+  padding: 5px;
+  font-size: 1.3vw;
+  display: block;
+  border-radius:10px;
+}
+.second_cards {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .cards {
+    width:17.5vw;
+    font-size:2vw
+  }
+}
+@media (max-width: 1024px) {
+  .cards {
+    font-size:2.5vw;
+    width:20vw;
+  }
+}
+@media (max-width: 768px) {
+  .cards {
+    width:25vw;
+    font-size:3vw
+  }
+}
+@media (max-width: 425px) {
+  .cards {
+    width:35vw;
+    font-size:4vw;
+    padding: 10px;
+  }
+  .second_choose_card{
+    padding:1vw 0;
+  }
+}

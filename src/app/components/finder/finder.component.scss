@@ -1,0 +1,94 @@
+.finder {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px white;
+  width: 250px;
+  height: 45px;
+  justify-content: center;
+  position: relative;
+  left: 60vw;
+  margin-bottom: 15px;
+  background-color: black;
+}
+.finderTypeInside{
+  display: flex;
+  align-items: center;
+  border-radius:  50px ;
+  height: 45px;
+  justify-content: center;
+  box-shadow: 0px 3px 10px white;
+}
+.find{
+height: 40px;
+width:20%;
+display: grid;
+place-items: center;
+}
+.input {
+  border: none;
+  background: none;
+  width: 60%;
+  outline: none;
+  color: white;
+  font-family: Konga pro;
+  font-size: 20px;
+}
+.input::placeholder {
+  font-family: Konga pro;
+  color: white;
+  font-size: 20px;
+}
+
+.variants{
+color:white;
+font-family: Konga Pro;
+}
+.finderType{
+display: flex;
+flex-direction: column;
+width: 250px;
+left: 60vw;
+position: absolute;
+background-color: black;
+border-radius: 15px;
+box-shadow: 0px 0px 10px white;
+}
+.variant:hover{
+cursor: pointer;
+}
+.variant{
+margin:10px;
+}
+.none{
+display: none;
+}
+.find:hover{
+cursor: pointer;
+}
+@media (max-width: 768px) {
+  .input::placeholder {
+    font-size: 18px;
+  }
+  .finder {
+    width: 175px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .finderType{
+    width: 175px;
+    font-size: 18px;
+  }
+  }
+@media (max-width: 500px) {
+  .finder {
+    left: 50vw;
+  }
+  .finderType{
+    left: 50vw;
+    width: 175px;
+  }
+  .finderTypeInside{
+  width:175px;
+  }
+}

@@ -62,6 +62,8 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
@@ -77,6 +79,7 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "pizzainfo:build"
+
           }
         },
         "test": {
@@ -95,10 +98,15 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            "src/assets/scripts/pizzaCustomResponse.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "fd58cf28-4129-4ecb-9234-8ba64e725221"
   }
 }

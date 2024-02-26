@@ -1,0 +1,150 @@
+body {
+  min-height: 125vh;
+  background-color: black;
+  color: white;
+  font-family: Konga Pro;
+}
+.redLight{
+  box-shadow: 0 0 15px red;
+}
+.calculator {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.none {
+  display: none;
+}
+app-choose{
+  box-shadow: 0 0 15px white;
+  border-radius: 15px;
+}
+.pizza {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  max-width: 350px;
+  width: 75%;
+  min-width: 175px;
+}
+.pizza_image {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+}
+.pizza_icon {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.pizza:hover {
+  cursor: pointer;
+}
+.functions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bars {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+.link_shop {
+  border-radius: 50px;
+  color: black;
+  background-color: orange;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  font-size: 17px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-rows: 1fr 1fr;
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 30px;
+    align-items: flex-start;
+  }
+  .functions {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .pizza {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: center;
+  }
+  app-choose {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .description {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 768px) {
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+  }
+  .functions {
+    grid-area: 2 / 1 / 3 / 3;
+    align-items: center;
+  }
+  app-choose {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .bars {
+    margin: 0;
+  }
+  .pizza {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 30vw;
+  }
+}
+@media (max-width: 425px) {
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.8fr 0.6fr;
+    gap: 30px;
+    width: 90%;
+    margin-top: 30px;
+  }
+  .functions {
+    grid-area: 2 / 1 / 4 / 3;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: 0.75fr 0.5fr 1fr
+  }
+  app-choose {
+    grid-area: 1 / 1 / 3 / 2;
+    display: block;
+    align-self:flex-end;
+    z-index: 3;
+  }
+  .bars {
+    margin: 0;
+    grid-area: 3 / 1 / 4 / 3;
+    align-self: center;
+  }
+  .link_shop{
+    grid-area: 1 / 2 / 2 / 3;
+    height: 150%;
+    border-radius: 25px;
+    text-align: center;
+    align-self: last baseline;
+  }
+  .pizza {
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}

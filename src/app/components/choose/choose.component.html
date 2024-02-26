@@ -1,0 +1,16 @@
+<div class="choose"> 
+  <span class="cards" *ngIf="!ShowSecond"> 
+    <div class="main_choose_card" (click)="SecondCards(category.Name)" *ngFor="let category of ingredients"> 
+      {{category.Name}} 
+    </div> 
+  </span> 
+  <div class="cards" *ngIf="ShowSecond"> 
+    <div class="main_choose_card" style="color:#C38337" (click)="SecondCards(NameCategory)">{{NameCategory}}</div> 
+    <span class="second_cards"> 
+      <div [attr.Pizza]="item.Pizza" [attr.Name]="item.Name" [attr.Procent]="item.Procent" (click)="sendItem($event)"class="second_choose_card" *ngFor="let item of Items"> 
+        <img class="Ingredient_img" [src]="item.URL" alt=" "> 
+        <div class="text">{{item.Name}}</div>
+      </div> 
+    </span>   
+  </div> 
+</div>

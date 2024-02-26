@@ -1,0 +1,37 @@
+.card{
+width: 350px;
+height:150px;
+border-radius: 20px;
+background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+font-family: Konga Pro;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color:white;
+box-shadow: 0px 0px 10px 5px white;
+}
+.text{
+text-align: center;
+}
+.links_span{
+display:flex;
+gap:30px;
+margin: 0 auto;
+}
+.link{
+text-decoration: none;
+}
+.agree{
+background-color: white;
+padding: 15px;
+border-radius: 15px;
+color:black;
+}
+.disagree{
+color:white;
+padding: 15px;
+}

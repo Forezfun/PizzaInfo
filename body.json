@@ -1,0 +1,13 @@
+{
+    "modelUri": "gpt://b1g4qc4c1lpg8a26cihs/yandexgpt-lite",
+    "completionOptions": {
+      "stream": false,
+      "temperature": 0
+    },
+    "messages": [
+      {
+        "role": "user",
+        "text": "найди информацию о пицце Пеперони и верни в виде объекта ts - {Addons: { Date(примерная дата создания, век (например:XVI век)): string; Country(страна где впервые появилась пицца): string; Top(относительный рейтинг пиццы): number; Difference(отличия - только 2 штуки на русском языке): string[]; }; Name(название): string; Description(описание пиццы, на что похож вкус, как выглядит, краткая история, не слишком много, до 150 знаков): string; }"
+      }
+    ]
+  }

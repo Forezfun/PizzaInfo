@@ -1,0 +1,45 @@
+.progress-bar {
+  position: relative;
+  width:10vw;
+  transform-origin: center;
+  font-family: Konga Pro;
+  color: white;
+  max-width: 150px;
+}
+
+.progress-circle {
+  fill: none;
+  stroke: orange;
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease-in-out;
+}
+text {
+  fill: white;
+  font-size: 25px;
+}
+.category {
+  text-align: center;
+  font-size: 20px;
+}
+@media (max-width:1024px){
+  .progress-bar{
+  width: 15vw;
+  }
+}
+@media (max-width:768px){
+  .progress-bar{
+  width: 17vw;
+  }
+}
+@media (max-width:500px){
+  .progress-bar{
+    width: 23vw;
+    }
+}
+@media (max-width:425px){
+  .progress-bar{
+    width: 27vw;                                                                                    
+    }
+
+}

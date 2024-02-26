@@ -1,0 +1,45 @@
+.navigation{
+width:85%;
+margin:0 auto;
+text-align: center;
+margin-bottom: 50px;
+}
+.site_tittle{
+    color: #C38337;
+    margin: 0;  
+    font-size: 4vw;
+}
+.container{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    flex-shrink: 0;
+}
+.nav_btn{
+text-decoration: none;
+color:white;
+font-size: 2vw;
+}
+*{
+    font-family: Konga Pro;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+hr{
+height:3px;
+background-color: white;
+border-radius: 5px;
+}
+@media (max-width:425px) {
+    .site_tittle{
+    font-size: 50px;
+    }
+    .nav_btn{
+        font-size: 15px;
+    }
+    .navigation{
+    margin-bottom:15px;
+    }
+}

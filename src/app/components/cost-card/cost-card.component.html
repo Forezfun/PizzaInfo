@@ -1,0 +1,10 @@
+<span class="cost_card">
+    <img [src]="pizza.urlImage" alt=":(" class="pizza_image">
+    <div class="pizza_inform_cont">
+        <div class="pizza_text">
+            <div class="pizza_title">{{pizza.name}}</div>
+            <div class="pizza_description">{{pizza.description}}</div>
+        </div>
+        <app-cost [cost]="pizza.cost"></app-cost>
+    </div>
+</span>

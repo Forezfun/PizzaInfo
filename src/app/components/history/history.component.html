@@ -1,0 +1,26 @@
+<div class="history_title">{{Data.RusName}}</div>
+<div class="history">
+    <img (click)="changeImage()" class="pizza_image" [src]="Data.URL" alt=":(">
+    <div class="description">{{Data.Description}}</div>
+    <div class="Addons">
+        <div class="Date wrapper">
+            <div class="text">Дата</div>
+            <li class="text second_item">{{Data.Addons.Date}}</li>
+        </div>
+        <div class="Country wrapper">
+            <div class="text">Страна</div>
+            <img [src]="CountryIcon" alt=":(" class="CountryIcon second_item" />
+        </div>
+        <div class="Top wrapper">
+            <div class="text">Топ</div>
+            <li class="text second_item">{{Data.Addons.Top}}</li>
+        </div>
+        <div class="Difference wrapper">
+            <div class="text">Отличия</div>
+            <ul>
+                <li class="text">{{Data.Addons.Difference[0]}}</li>
+                <li>{{Data.Addons.Difference[1]}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

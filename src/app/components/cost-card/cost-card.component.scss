@@ -1,0 +1,59 @@
+.cost_card {
+  display: flex;
+  flex-direction: row;
+  column-gap: 60px;
+  width: 75vw;
+  margin: 0 auto;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.pizza_image {
+  max-width: 300px;
+}
+.pizza_text {
+  color: white;
+  font-family: Konga Pro;
+  gap: 30px;
+  flex-direction: column;
+  width: 50%;
+  display: flex;
+}
+.pizza_title {
+  font-size: 3vw;
+}
+.pizza_description {
+  font-size: 1.7vw;
+}
+.pizza_inform_cont {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+}
+app-cost {
+  align-self: center;
+}
+
+@media (max-width: 1024px) {
+  .cost_card {
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .pizza_title {
+    font-size: 5vw;
+  }
+  .pizza_description {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 425px) {
+  .pizza_title {
+    font-size: 7vw;
+  }
+  .pizza_description {
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,22 @@
+<body>
+    <app-navigation></app-navigation>
+    <span class="calculator">
+        <app-choose (dataEvent)="pizzaConf($event)"></app-choose>
+        <div class="pizza" (click)="imageResponse()">
+            <img class="pizza_image" [src]="pizzaImage" alt=" ">
+            <div  class="pizza_icon"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="27" viewBox="0 0 35 27"
+                    fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.34473 0.954102C1.68787 0.954102 0.344727 2.29725 0.344727 3.9541V23.7273C0.344727 25.3841 1.68787 26.7273 3.34473 26.7273H31.4827C33.1395 26.7273 34.4827 25.3841 34.4827 23.7273V3.9541C34.4827 2.29725 33.1395 0.954102 31.4827 0.954102H3.34473ZM18.7502 23.9836L24.054 18.0014C24.6854 17.2857 24.6854 16.1346 24.054 15.4249C23.4226 14.7151 22.4022 14.7151 21.7708 15.4249L19.225 18.2996V5.35728C19.225 4.34933 18.5027 3.53223 17.6086 3.53223C16.7146 3.53223 15.9923 4.34933 15.9923 5.35728V18.2996L13.4465 15.4249C12.8151 14.7151 11.7947 14.7151 11.1633 15.4249C10.5319 16.1346 10.5319 17.2917 11.1633 18.0014L16.4873 23.9836C16.7853 24.3414 17.1793 24.5203 17.6187 24.5203C18.0582 24.5203 18.4572 24.3414 18.7502 23.9836Z"
+                        fill="black" />
+                </svg>
+            </div>
+        </div>
+        <span class="functions">
+            <a href="https://dodopizza.ru/moscow/kirova101/product/pizza_konstruktor" class="link_shop">Перейти в магазин</a>
+            <span class="bars">
+                <app-progress-bar [progressBar]="item" *ngFor="let item of pizzasArrayProcent"></app-progress-bar>
+            </span>
+        </span>
+    </span>
+</body>

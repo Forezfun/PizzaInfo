@@ -1,0 +1,11 @@
+<body>
+    <script src="https://unpkg.com/@vkid/sdk@latest/dist-sdk/umd/index.js"></script>
+    <app-navigation></app-navigation>
+    <app-finder (pizzaNameEvent)="pizzaClick($event)" [OnType]="true" [PizzaArrayCont]="pizzasArray"></app-finder>
+    <span class="pizzaSpan">
+        <div *ngFor="let pizza of pizzaArrayShow">
+            <app-cost-card [pizza]="pizza"></app-cost-card>
+        </div>
+    </span>
+</body>
+<app-accept-card></app-accept-card>
