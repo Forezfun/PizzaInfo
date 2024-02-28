@@ -50,19 +50,9 @@ export class HistoryComponent implements OnInit, AfterViewChecked {
     France: 'assets/images/Country-France.png',
     Japan: 'assets/images/Country-Japan.png',
   };
-  changeImage(){}
-  imageUpdate(name: string) {
-    this.ImgGetService.getPizzaImg(name)
-    .subscribe(
-      (response) => {
-        let answer:any=response
-        answer=answer.items[0].link
-        this.Data.URL=answer
-        this.cdr.markForCheck()
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
+  async imageUpdate(name: string) {
+    const response  = await this.ImgGetService.getPizzaImg(name)
+    this.Data.URL=response
+    this.cdr.markForCheck()
   }
 }

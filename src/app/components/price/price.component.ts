@@ -106,17 +106,8 @@ export class PriceComponent implements AfterViewInit {
       if(pizza.name==name){pizza.urlImage=imageUrl}
     }
   }
-  imageUpdate(name: string) {
-    this.ImgGetService.getPizzaImg(name)
-    .subscribe(
-      (response) => {
-        let answer:any=response
-        answer=answer.items[0].link
-        this.imageChange(name,answer)
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
+  async imageUpdate(name: string) {
+    const response = await this.ImgGetService.getPizzaImg(name)
+        this.imageChange(name,response)
   }
 }

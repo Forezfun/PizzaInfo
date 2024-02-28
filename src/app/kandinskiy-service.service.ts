@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
 interface GenerateImgResponse {
   uuid: string;
 }
@@ -37,7 +36,11 @@ export class KandinskiyServiceService {
         this.urlBase+this.nameModel,
         data,
         { headers }
-      ).toPromise()
+      )
+      .toPromise()
+      .catch(err=>{
+      console.log('Error: ',err)
+      })
     return (response as any)[0].file
   }
 }

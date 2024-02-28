@@ -48,7 +48,11 @@ export class HistoryGptService {
         },
       ],
       max_tokens: 300,
-    }, { headers: this.headers }).toPromise();
+    }, { headers: this.headers })
+    .toPromise()
+    .catch(err=>{
+      console.log('Error: ',err)
+      })
 
     return response
   }
