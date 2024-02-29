@@ -7,10 +7,6 @@ import {
 } from '@angular/core';
 import { example_pizza } from '../main-page/main-page.component';
 import { HistoryGptService } from '../history-gpt.service';
-import { map, catchError } from 'rxjs/operators';
-import { from } from 'rxjs';
-import { response } from 'express';
-import { error } from 'console';
 import { StatusComponent } from '../status/status.component';
 import { HistoryComponent } from '../history/history.component';
 interface PizzaInfo {
