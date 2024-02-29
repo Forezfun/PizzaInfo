@@ -7,16 +7,12 @@ import OpenAI from 'openai';
   providedIn: 'root',
 })
 export class HistoryGptService {
-  private urlApi = 'https://api.openai.com/v1/chat/completions';
-  private apiKey = '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';
-  private headers = {
-    Authorization: `Bearer ${this.apiKey}`,
-    'Content-Type': 'application/json',
-  };
-
+  private urlApi = 'https://api.air.fail/public/text/';
+  private apiKey = 'sk-xO18losgvhelwfpS1oGTBOxLYgH7b';
+  private nameModel ='chatgpt'
   constructor(private http: HttpClient) {}
-
   async getPizzaInfo(name: string) {
+    const headers = {Authorization:this.apiKey}
     const prompt = `
       Ищу информацию о пицце ${name}. Верни данные в виде объекта TypeScript, с учетом следующих ограничений:
       {
@@ -34,22 +30,14 @@ export class HistoryGptService {
       скинь только объект без пояснений, этот ответ будет использоваться в коде, который преобразуется в объект ts
       не пиши вступление и какие либо фразы
     `;
-
-    const response = await this.http.post(this.urlApi, {
-      model: 'gpt-3.5-turbo',
-      messages: [
-        {
-          role: 'system',
-          content: 'You are a helpful JSON assistant.',
-        },
-        {
-          role: 'user',
-          content: prompt,
-        },
-      ],
-      max_tokens: 300,
-    }, { headers: this.headers }).toPromise();
-
+    const data = {
+    content:prompt
+    }
+    const response = await this.http.post(this.urlApi+this.nameModel, data, { headers: headers })
+    .toPromise()
+    .catch(err=>{
+      console.log('Error: ',err)
+      })
     return response
   }
 }
