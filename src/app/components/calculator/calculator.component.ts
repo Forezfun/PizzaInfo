@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, Renderer2, ViewChild } from '@angular/core';
-import { KandinskiyServiceService } from 'src/app/kandinskiy-service.service';
+import { KandinskiyServiceService } from 'src/app/components/kandinskiy-service.service';
 import { ChooseComponent } from '../choose/choose.component';
 type PizzaType = {
   [pizza: string]: number;
