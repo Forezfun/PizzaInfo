@@ -10,7 +10,6 @@ import { AcceptCardComponent } from '../accept-card/accept-card.component';
 import { pizzaInterface } from '../cost-search.service';
 import { CookieService } from 'ngx-cookie-service';
 import { GoogleSearchService } from '../google-search.service';
-import { request } from 'http';
 @Component({
   selector: 'app-price',
   templateUrl: './price.component.html',

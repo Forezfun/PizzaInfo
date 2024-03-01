@@ -1,4 +1,4 @@
-import { Component, Input, AfterViewInit, TemplateRef, AfterViewChecked, OnInit, ElementRef } from '@angular/core';
+import { Component, Input, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-cost',

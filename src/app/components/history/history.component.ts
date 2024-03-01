@@ -1,15 +1,12 @@
 import {
   AfterViewChecked,
-  AfterViewInit,
   ChangeDetectorRef,
   Component,
   ElementRef,
   Input,
   OnInit,
 } from '@angular/core';
-import { catchError,map } from 'rxjs';
 import { GoogleSearchService } from '../google-search.service';
-import { tap,of } from 'rxjs';
 @Component({
   selector: 'app-history',
   templateUrl: './history.component.html',

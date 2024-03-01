@@ -1,7 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { query } from 'express';
-import { Observable, from } from 'rxjs';
 interface pizza{
 Name:string;
 Url:string;

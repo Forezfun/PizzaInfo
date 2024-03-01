@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, from } from 'rxjs';
-import OpenAI from 'openai';
 
 @Injectable({
   providedIn: 'root',
