@@ -39,7 +39,7 @@ export class HistoryPageComponent {
     this.cdr.markForCheck();
     this.GPT.getPizzaInfo(data)
     .then((value) => {
-      const response = JSON.parse((value as any)[0].message.content)
+      const response = JSON.parse((value as any)[0].content)
       this.pizzaObject=response
       this.childHistoryComponent.imageUpdate(response.RusName)
       this.childStatusComponent.statusUpdate('succesful');
