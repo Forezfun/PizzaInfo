@@ -1,10 +1,12 @@
 # PizzaInfo
-Install libraries - npm install
+Установка библиотек - npm install
 # Start Project
-Turn on VPN
+Включите любой VPN - это используется для запроса истории пиццы, т.к выполняется это через ChatGPT 3.5 Turbo, а он не доступен в РФ
 #
-lcp --proxyUrl https://api.vk.com
+Запуск прокси -  lcp --proxyUrl https://api.vk.com
 #
-ng serve --port 80
+Запуск проекта -  ng serve --port 80
 # Lighthouse analyse
-Stats - https://drive.google.com/drive/folders/1j8YJK8zTj9p3uoVQgDbwcVd414KvdKwJ?usp=drive_link
+Статистика - https://drive.google.com/drive/folders/1j8YJK8zTj9p3uoVQgDbwcVd414KvdKwJ?usp=drive_link
+# Please
+Не используйте часто запрос истории пиццы, т.к баланс API не бесконечен, спасибо!)
