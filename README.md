@@ -7,6 +7,6 @@
 # Figma
 Ссылка - http://surl.li/scktq
 # Lighthouse analyse
-Статистика - https://drive.google.com/drive/folders/1j8YJK8zTj9p3uoVQgDbwcVd414KvdKwJ?usp=drive_link
+Статистика - http://surl.li/scktz
 # Please
 Не используйте часто запрос истории пиццы, т.к баланс API не бесконечен, спасибо!)
